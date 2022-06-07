@@ -1,351 +1,395 @@
 :root {
-    --main-bg-color: #f1e6f3;
-    /* --main-bg-color: #F2DFE2; */
-    --secondary-bg-color: #F2C4DE;
-    --main-text-color: #594F56;
-    --secondary-text-color: #bcc9f3;
-    --accent-color: #DED0F2;
-    --secondary-accent-color: #4fffbe;
-    --font-size-big: 1.6rem;
-    --font-size-regular: 1.3rem;
-    --font-size-small: 1rem;
+  --main-bg-color: #f1e6f3;
+  /* --main-bg-color: #F2DFE2; */
+  --secondary-bg-color: #f2c4de;
+  --main-text-color: #594f56;
+  --secondary-text-color: #bcc9f3;
+  --accent-color: #ded0f2;
+  --secondary-accent-color: #6effca;
+  --font-size-big: 1.6rem;
+  --font-size-regular: 1.3rem;
+  --font-size-small: 1rem;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background: rgb(242,196,222);
-    background: -moz-linear-gradient(170deg, rgba(242,196,222,1) 0%, rgba(241,230,243,1) 40%);
-    background: -webkit-linear-gradient(170deg, rgba(242,196,222,1) 0%, rgba(241,230,243,1) 40%);
-    background: linear-gradient(170deg, rgba(242,196,222,1) 0%, rgba(241,230,243,1) 40%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2c4de",endColorstr="#f1e6f3",GradientType=1); 
-    color: var(--main-text-color);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: rgb(242, 196, 222);
+  background: -moz-linear-gradient(
+    170deg,
+    rgba(242, 196, 222, 1) 0%,
+    rgba(241, 230, 243, 1) 40%
+  );
+  background: -webkit-linear-gradient(
+    170deg,
+    rgba(242, 196, 222, 1) 0%,
+    rgba(241, 230, 243, 1) 40%
+  );
+  background: linear-gradient(
+    170deg,
+    rgba(242, 196, 222, 1) 0%,
+    rgba(241, 230, 243, 1) 40%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2c4de",endColorstr="#f1e6f3",GradientType=1);
+  color: var(--main-text-color);
 }
 
 header {
-    width: 80%;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 auto 1rem;
-    padding-top: 1rem;
-    border-bottom: 3px solid var(--secondary-text-color);
-    font-family: 'Noticia Text', serif;
-    font-size: var(--font-size-big);
-    background-color: var(--accent-color);
-    letter-spacing: 0.04rem;
-    text-transform: capitalize;
-    text-shadow: -3px 0px .5px var(--secondary-bg-color);
-    cursor: default;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 1rem;
+
+  border-bottom: 3px solid var(--secondary-text-color);
+
+  background: rgb(222, 208, 242);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(222, 208, 242, 1) 2%,
+    rgba(79, 255, 190, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(222, 208, 242, 1) 2%,
+    rgba(79, 255, 190, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(222, 208, 242, 1) 2%,
+    rgba(79, 255, 190, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ded0f2",endColorstr="#4fffbe",GradientType=1);
+
+  text-align: center;
+  cursor: default;
 }
 
+header .titulo {
+  color: var(--main-text-color);
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  text-shadow: 0px -1px 0.5px var(--secondary-accent-color);
+  margin: 0 auto;
+}
 
 main {
-    width: 100vw;
+  width: 100vw;
 }
 
 /*----------INPUTS----------*/
 .todoInputs {
-    display: flex;
+  display: flex;
 
-    width: 80vw;
-    margin: 0 auto 1rem;
+  width: 80vw;
+  margin: 0 auto 1rem;
 
-    align-items: center;
+  align-items: center;
 
-    position: relative;
+  position: relative;
 }
 
 .tarefa {
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .inputTarefa {
-    /* width: 500px; */
-    box-sizing: border-box;
-    appearance: none;
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 10px 0 10px 10px;
-    border-radius: 5px;
-    background-color: var(--secondary-accent-color);
-    border: 1px solid var(--secondary-bg-color);
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 300;
-    color: var(--main-text-color);
+  /* width: 500px; */
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  background-color: var(--secondary-accent-color);
+  border: 1px solid var(--secondary-bg-color);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  color: var(--main-text-color);
 }
 
 .inputTarefaTexto-erro {
-    border: 1px solid red;
-    color: red;
+  border: 1px solid red;
+  color: red;
 }
 
 .botaoAdicionar {
-    background: var(--secondary-bg-color);
-    color: var(--main-text-color);
-    text-transform: lowercase;
-    line-height: 1.8rem;
-    padding: 0 1rem;
+  background: var(--secondary-bg-color);
+  color: var(--main-text-color);
+  text-transform: lowercase;
+  line-height: 1.8rem;
+  padding: 0 1rem;
 
-    border-radius: 4px;
-    border: 1px solid var(--secondary-bg-color);
-    text-transform: capitalize;
-    box-shadow: 0 3px 2px var(--secondary-accent-color);
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-
+  border-radius: 4px;
+  border: 1px solid var(--secondary-bg-color);
+  text-transform: capitalize;
+  box-shadow: 0 3px 2px var(--secondary-accent-color);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .botaoAdicionar:hover {
-    background-color: var(--secondary-accent-color);
-    box-shadow: 0 3px 2px var(--secondary-bg-color);
-    transform: scale(1.05);
-    transition: all .1s ease-in;
+  background-color: var(--secondary-accent-color);
+  box-shadow: 0 3px 2px var(--secondary-bg-color);
+  transform: scale(1.05);
+  transition: all 0.1s ease-in;
 }
 
 .botaoAdicionar:active {
-    background-color: var(--secondary-text-color);
-    transform: scale(.95);
-    transition: all .1s ease-in;
+  background-color: var(--secondary-text-color);
+  transform: scale(0.95);
+  transition: all 0.1s ease-in;
 }
 
-
 .linha {
-    width: 80vw;
-    border-bottom: 1px solid var(--secondary-text-color);
-    margin: 0 auto;
-    visibility: hidden;
+  width: 80vw;
+  border-bottom: 1px solid var(--secondary-text-color);
+  margin: 0 auto;
+  visibility: hidden;
 }
 
 /*----------TIME PICKER----------*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none !important;
-    /* appearance: none; */
-    margin: 0 !important;
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
+  -webkit-appearance: none !important;
+  /* appearance: none; */
+  margin: 0 !important;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
 }
 
 input[type="number"] {
-    -moz-appearance: textfield !important;
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
+  -moz-appearance: textfield !important;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
 }
 
 .time-picker {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    width: 100%;
-    max-width: 110px;
+  width: 100%;
+  max-width: 110px;
 
+  background-color: var(--secondary-accent-color);
+  border: 1px solid var(--secondary-bg-color);
+  border-radius: 8px;
+  /* box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); */
 
-    background-color: var(--secondary-accent-color);
-    border: 1px solid var(--secondary-bg-color);
-    border-radius: 8px;
-    /* box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); */
+  font-size: var(--font-size-regular);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
 
-    font-size: var(--font-size-regular);
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
-
-    user-select: none;
+  user-select: none;
 }
 
 .time-picker .hour,
 .time-picker .minute {
-    position: relative;
-    min-width: var(--font-size-regular);
-    text-align: center;
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-
+  position: relative;
+  min-width: var(--font-size-regular);
+  text-align: center;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
 .time-picker .hour .hr,
 .time-picker .minute .min {
-    background: none;
-    font-size: var(--font-size-regular);
-    appearance: none;
-    border: none;
-    outline: none;
-    display: block;
-    width: 100%;
-    text-align: center;
-    height: 68px;
-    color: var(--main-text-color);
+  background: none;
+  font-size: var(--font-size-regular);
+  appearance: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 68px;
+  color: var(--main-text-color);
 }
 
 .time-picker .hour .hr-up,
 .time-picker .hour .hr-down,
 .time-picker .minute .min-up,
 .time-picker .minute .min-down {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
-    height: 20px;
+  height: 20px;
 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    cursor: pointer;
-
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  cursor: pointer;
 }
 
 .time-picker .hour .hr-up,
 .time-picker .minute .min-up {
-    top: -16.5px;
-    border-bottom: 20px solid var(--accent-color);
+  top: -16.5px;
+  border-bottom: 20px solid var(--accent-color);
 }
 
 .time-picker .hour .hr-down,
 .time-picker .minute .min-down {
-    bottom: -16.5px;
-    border-top: 20px solid var(--accent-color);
+  bottom: -16.5px;
+  border-top: 20px solid var(--accent-color);
 }
 
 .time-picker .hour .hr-up:hover,
 .time-picker .hour .hr-down:hover,
 .time-picker .minute .min-up:hover,
 .time-picker .minute .min-down:hover {
-    border-bottom-color: var(--secondary-bg-color);
-    border-top-color: var(--secondary-bg-color);
+  border-bottom-color: var(--secondary-bg-color);
+  border-top-color: var(--secondary-bg-color);
 }
 
 /*----------TODOLIST----------*/
 .toDoLista {
-    width: 80vw;
-    display: flex;
+  width: 80vw;
+  display: flex;
 
-    /* justify-content: flex-start; */
-    flex-direction: column;
-    margin: 1rem auto 0;
-
-
+  /* justify-content: flex-start; */
+  flex-direction: column;
+  margin: 1rem auto 0;
 }
 
 .toDoElemento {
-    display: flex;
-    min-height: 50px;
-    align-items: center;
-    /* background-color: red; */
-    margin-top: 5px;
-    /* background-color: var(--accent-color); */
-    gap: 10px;
-    /* line-height: 50px; */
-    font-family: 'Noticia Text', serif;
-    font-size: var(--font-size-small);
-
-
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  /* background-color: red; */
+  margin-top: 5px;
+  /* background-color: var(--accent-color); */
+  gap: 10px;
+  /* line-height: 50px; */
+  font-family: "Noticia Text", serif;
+  font-size: var(--font-size-small);
 }
 
 .toDoCheck {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-    background-color: var(--secondary-bg-color);
-    border-radius: 10px;
-    position: relative;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  position: relative;
 }
 
 .toDoHora {
-    height: 50px;
-    /* width: 50px; */
+  height: 50px;
+  width: 70px;
 
-    border-radius: 4px;
-    text-align: center;
-    position: relative;
-    background-color: var(--secondary-text-color);
-    padding: 0 5px;
-    box-sizing: border-box;
-    line-height: 50px;
-    cursor: default;
-
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  background-color: var(--secondary-text-color);
+  padding: 0 5px;
+  box-sizing: border-box;
+  line-height: 50px;
+  cursor: default;
 }
 
 .toDoTarefa {
-    width: 100%;
-    border-radius: 15px 0 0 6px;
-    border: 1px solid var(--secondary-text-color);
+  width: 100%;
+  border-radius: 15px 0 0 6px;
+  border: 1px solid var(--secondary-text-color);
 
-    background-color: var(--accent-color);
-    text-transform: lowercase;
-    padding: 10px 0 10px 10px;
-    position: relative;
+  background-color: var(--accent-color);
+  text-transform: lowercase;
+  padding: 10px 10px 10px 10px;
+  position: relative;
 }
 
 .toDoTarefa::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateX(-10px);
-    content: "";
-    border-right: 10px solid var(--secondary-accent-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-10px);
+  content: "";
+  border-right: 10px solid var(--secondary-accent-color);
 }
 
 .toDoTarefa::first-letter {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .botaoLimpaLista {
-    width: 7rem;
-    background: var(--secondary-bg-color);
-    text-transform: lowercase;
-    /* line-height: 2rem; */
-    padding: 0 1rem;
+  width: 7rem;
+  background: var(--secondary-bg-color);
+  text-transform: lowercase;
+  /* line-height: 2rem; */
+  padding: 0 1rem;
 
-    border-radius: 4px;
-    border: 1px solid var(--secondary-bg-color);
-    text-transform: capitalize;
-    box-shadow: 0 3px 2px var(--secondary-accent-color);
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
-    align-self: flex-end;
-    line-height: 2rem;
-    color: var(--main-text-color);
-    margin-top: 1.3rem;
-    cursor: pointer;
-
+  border-radius: 4px;
+  border: 1px solid var(--secondary-bg-color);
+  text-transform: capitalize;
+  box-shadow: 0 3px 2px var(--secondary-accent-color);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  align-self: flex-end;
+  line-height: 2rem;
+  color: var(--main-text-color);
+  margin-top: 1.3rem;
+  cursor: pointer;
 }
 
 .botaoLimpaLista:hover {
-    background-color: var(--secondary-accent-color);
-    box-shadow: 0 3px 2px var(--secondary-bg-color);
-    transform: scale(1.05);
-    transition: all .1s ease-in;
+  background-color: var(--secondary-accent-color);
+  box-shadow: 0 3px 2px var(--secondary-bg-color);
+  transform: scale(1.05);
+  transition: all 0.1s ease-in;
 }
 
 .botaoLixeiraArea {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--secondary-accent-color);
-    border-radius: 5px;
-    cursor: pointer;
-
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--secondary-accent-color);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .botaoLixeiraArea i {
-    color: var(--main-text-color);
+  color: var(--main-text-color);
 }
 
 .botaoLixeiraArea:hover {
-    transform: scale(1.1);
-    transition: all .1s ease-in;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in;
+}
+
+@media screen and (max-width: 576px) {
+  .time-picker {
+    margin-bottom: 1rem;
+    max-width: 150px;
+  }
+  .todoInputs {
+    flex-direction: column;
+    width: 95vw;
+  }
+
+  .inputTarefa {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .botaoAdicionar {
+    line-height: 3.8rem;
+    width: 10rem;
+    font-size: 1.3rem;
+    text-shadow: 0px 2px 0px var(--secondary-accent-color);
+  }
 }
